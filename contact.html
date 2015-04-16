@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>Keep In Touch</title>
+		<style type="text/css">
+		nav ul li{
+			display:inline;
+		}
+	</style>
 </head>
 <body>
 <header>
@@ -14,9 +19,57 @@
 	</nav>
 </header>
 <h1>Let's Keep In Touch</h1>
-<img src="http://www.smarta.com/media/2052269/how%20to%20stay%20in%20touch.jpg"/>
-<h2>Ready to join forces and share ideas?</h2>
-	<p>Please reach out to me at: <a href="mailto:chelseadeonne@gmail.com">chelseadeonne@gmail.com</a></p>
+	<h2>Ready to join forces and share ideas?</h2>
+<form>
+	<fieldset>
+		<legend>Please provide your information, and I will respond as soon as possible.</legend>
+		<label>
+			First Name:
+			<input type="text">
+		</label>
+		<label>
+			Last Name:
+			<input type="text">
+		</label>
+	<p>	<label>
+			Email Address:
+			<input type="text">
+		</label></p>
+	<p>	<label>
+			Phone Number:
+			<input type="text">
+		</label></p>
+	<p>	<label>
+			Best Day to reach you:
+			<select name="day">
+			<option value="Sunday">Sunday</option>
+			<option value="Monday">Monday</option>
+			<option value="Tuesday">Tuesday</option>
+			<option value="Wednesday">Wednesday</option>
+			<option value="Thursday">Thursday</option>
+			<option value="Friday">Friday</option>
+			<option value="Saturday">Saturday</option>
+			</select>
+		</label></p>
+	<p>	<label>
+			Most convenient Time:
+			<select name="time">
+			<option value="Morning">Morning</option>
+			<option value="Afternoon">Afternoon</option>
+			<option value="Evening">Evening</option>
+			</select>
+		</label></p>
+	<p>	<label>
+			What do you want to accomplish with your website?<br>
+			<textarea name="explanation"></textarea>
+	</label></p>
+	<p>Thank you, and talk to you soon!</p>
+	<input type="submit" name="submit" value="submit">
+	</fieldset>
+</form>
+
+<p>Feel free to reach out anytime: <a href="mailto:chelseadeonne@gmail.com">chelseadeonne@gmail.com</a></p>
+
 		
 
 </body>
