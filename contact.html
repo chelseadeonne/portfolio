@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link type="text/css" rel="stylesheet" href="style.css">
 	<title>Keep In Touch</title>
-		<style type="text/css">
-		nav ul li{
-			display:inline;
-		}
-	</style>
 </head>
-<body>
+<body class="contact">
+<div class="container">
+<!--========================= Header ============================-->
 <header>
-	<nav>
+	<img class="fingertips1" src="images/fingertips.png">
+	<nav class="top-nav">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li>Keep In Touch</li>
-			<li><a href="about.html">Who is this woman?</a></li>
+			<li class="top-nav-button">
+				<a href="index.html"><button>Home</button></a>
+			</li>
+			<li class="top-nav-button">
+				<a href="skills.html"><button>Skills</button></a>
+			</li>
+			<li class="top-nav-button">
+				<a href="contact.html"><button>Keep In Touch</button></a>
+			</li>
+			<li class="top-nav-button">
+				<a href="about.html"><button>Who Is This Woman?</button></a>
+			</li>
 		</ul>
 	</nav>
+	<img class="fingertips2" src="images/fingertips.png">
 </header>
-<h1>Let's Keep In Touch</h1>
-	<h2>Ready to join forces and share ideas?</h2>
+<!--========================= Middle Section ============================-->
+<section class="middle">
+<div class="visual-title">
+	<ul>
+		<li><h1>Ready to join forces<br>&amp; share ideas?</h1></li>
+		<li><img class="reach-out" src="images/reach-out.jpg"></li>
+		<li><h1>Let's keep<br>in touch</h1></li>
+	</ul>
+</div>
+<div class="form-section">
 <form>
 	<fieldset>
 		<legend>Please provide your information, and I will respond as soon as possible.</legend>
@@ -67,10 +84,16 @@
 	<input type="submit" name="submit" value="submit">
 	</fieldset>
 </form>
-
-<p>Feel free to reach out anytime: <a href="mailto:chelseadeonne@gmail.com">chelseadeonne@gmail.com</a></p>
-
-		
-
+</div>
+</section>
+<!--========================= Footer ============================-->		
+<footer>
+	<img class="point-right"src="images/point.png">
+	<a href="mailto:chelseadeonne@gmail.com">
+	<button>Feel free to reach out anytime: chelseadeonne@gmail.com</button>
+	</a>
+	<img class="point-left"src="images/point.png">
+</footer>
+</div>
 </body>
 </html>
