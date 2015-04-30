@@ -1,36 +1,38 @@
-html, body {
-	margin:0;
+body {
+	margin: 0;
+	padding: 0;
 }
 .container {
-	width:100%;
-	height:100%;
+	width:100%vw;
+	height:100%vh;
 	margin:0 auto;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 header {
 	width:100%;
 	height:100px;
-	margin-right:auto;
-	margin-left:auto;
+	padding: 0;
 	background-color:black;
-	position:relative;
 }
 .fingertips1, .fingertips2 {
 	height:70px;
 	width:100px;
 	margin-top:10px;
-	position:absolute;
+	position: relative;
 }
 .top-nav {
 	text-align:center;
+	position: relative;
+	bottom: 104%;
+	width:90%;
+	margin-right:auto;
 	margin-left:auto;
 }
 .top-nav-button {
 	list-style:none;
 	display:inline-block;
 	text-align:center;
-	margin-right:40px;
-	margin-top:20px;
+	width:20%;
 }
 .top-nav-button button {
 	width:200px;
@@ -41,6 +43,10 @@ header {
 	font-size:17px;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	border:dotted white;
+	margin-top:10%;
+	cursor:pointer;
+	transition:1s;
+
 }
 .top-nav-button button:hover {
 	background-color:#FFFFBD;
@@ -62,8 +68,6 @@ footer {
 	margin-right:auto;
 	margin-left:auto;
 	background-color:black;
-	position:relative;
-	bottom:0;
 	text-align:center;
 }
 footer button {	
@@ -93,6 +97,8 @@ footer button:hover {
 	color:black;
 	border:dotted;
 	font-weight:bold;
+	cursor:pointer;
+	transition:1s;
 }
 footer .point-left {
 	right:22%;
@@ -103,24 +109,47 @@ footer .point-left {
 	transform: scale(-1, 1);
 }
 /*========================= Home ============================*/
+
 .home .middle {
+
+}
+
+.home .middle {
+	#position: relative;
+	#top: 25px;
+	min-height: 76vh;
 	width:80%;
-	margin-right:auto;
-	margin-left:auto;
+	margin: 0 auto;
+	text-align: center;
 }
 .home h1 {
 	text-align:center;
 }
+.first-paragraph {
+	width:75%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
 .decorative-line {
 	width:100%;
 	height:60px;
 }
+
+.other-portfolios ul {
+	text-align: center;
+}
+
+.other-portfolios ul li {
+	margin: 0 6%;
+}
+
 .home .other-portfolios {
 	list-style:none;
 	width:80%;
 	padding-top:10px;
-	margin-right:auto;
 	margin-left:auto;
+	margin-right:auto;
 }
 .home .li-other-portfolios {
 	display:inline-block;
@@ -131,7 +160,7 @@ footer .point-left {
 	height:150px;
 	border:none;
 	background:transparent;
-	margin-right:20px;
+	margin-right:10%;
 	font-weight:bold;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size:17px;
@@ -139,11 +168,14 @@ footer .point-left {
 	background-repeat:no-repeat;
 	background-size:250px 150px;
 	outline:none;
+	cursor:pointer;
 }
 .home .li-other-portfolios button:hover {
 	background-repeat:no-repeat;
 	background-size:250px 150px;
 	color:transparent;
+	opacity: 0.6;
+	transition:2s;
 }
 .home .button1:hover {
 	background-image: url(images/shcc.png);
@@ -173,10 +205,16 @@ background-image: url(images/small-studio.jpg);
 	padding-top:15%;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size:17px;
+	
 }
 .skills .button-resume:hover {
 	background-image:url(images/resume2.jpg);
 	background-size:200px 150px;
+	cursor:pointer;
+
+}
+.skills .resume-text {
+	text-align:center;
 }
 .skills .skills-list {
 	list-style:none;
@@ -226,8 +264,11 @@ background-image: url(images/small-studio.jpg);
 	margin-left:auto;
 
 }
+.contact .visual-title ul {
+	text-align:center;
+	list-style:none;
+}
 .contact .visual-title li{
-	display:inline-block;
 	vertical-align:middle;
 	padding-right:3%;
 }
@@ -237,12 +278,18 @@ background-image: url(images/small-studio.jpg);
 .contact .middle img {
 	border-radius:100%;
 }
+.form-section {
+	margin:0 auto;
+}
 .contact form {
 	width:50%;
 	margin-right:auto;
 	margin-left:auto;
 	margin-bottom:2%;
 	background-color:#FFFFBD;
+}
+.contact form .submit {
+	cursor:pointer;
 }
 /*========================= About ============================*/
 .about .middle {
