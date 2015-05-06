@@ -3,6 +3,19 @@
 <head>
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<title>Keep In Touch</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+			$(document).ready(function () {
+			var email_name = "ChelseaDeonne@";
+			var server_name = "gmail.com";
+			var email = email_name + server_name;
+			function email(){
+			$('.email').html(email);	
+			}
+			
+			});
+				
+	</script>
 </head>
 <body class="contact">
 <div class="container">
@@ -33,8 +46,10 @@
 	<ul>
 		<li><h1>Ready to join forces &amp; share ideas?</h1></li>
 		<li><img class="reach-out" src="images/kit.jpg"></li>
-		<li><h1>Let's keep in touch</h1></li>
+		<li><h1>Let's keep in touch</h1>
+		<li class="email" onclick='email()'> </li>
 	</ul>
+	
 </div>
 <div class="form-section">
 <form>

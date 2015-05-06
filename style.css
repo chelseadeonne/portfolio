@@ -303,6 +303,9 @@ background-image: url(images/small-studio.jpg);
 	background-color:#FFFFBD;
 	border:2px solid #B800B8;
 }
+.about h4 {
+	text-align:center;
+}
 .about table {
 	width:80%;
 	margin-right:auto;
